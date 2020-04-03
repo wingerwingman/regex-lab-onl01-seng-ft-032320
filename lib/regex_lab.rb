@@ -18,5 +18,5 @@ end
 
 def valid_phone_number?(phone)
   # binding.pry
-  phone.match?(/^[1-9]{10}$/)
+  phone.match?(/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)
 end
